@@ -26,7 +26,7 @@ export const ClickableInputButton = ({
       disabled={disabled}
       type="button"
       className={mergeClasses(
-        'min-w-[12px] max-w-[12px] !px-0 !py-0 !pt-0 !pb-0  enabled:active:scale-100 scale-100',
+        'min-w-[12px] max-w-[12px] !px-0 !py-0 !pt-0 !pb-0 enabled:active:scale-100 scale-100',
         className,
       )}
       leftIcon={<Icon />}></Button>

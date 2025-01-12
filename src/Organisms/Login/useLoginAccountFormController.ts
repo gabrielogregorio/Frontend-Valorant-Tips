@@ -47,7 +47,6 @@ export const useLoginAccountFormController = () => {
 
       setErrorMessage(errorMessage);
       setIsLoading(false);
-      console.log('error');
       return;
     }
 
@@ -63,10 +62,8 @@ export const useLoginAccountFormController = () => {
       // httpOnly: true,
       expires: new Date(expiresAtIso),
     });
-    console.log(token, userId);
     setSuccess('Login realizado com sucesso');
     setIsLoading(false);
-    console.log('response', data);
     push(RouteScreensEnum.dashboard);
   };
 

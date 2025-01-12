@@ -45,7 +45,6 @@ export const useProfileDataAccountFormController = () => {
 
       setErrorMessage(errorMessage);
       setIsLoading(false);
-      console.log('error');
       return;
     }
 

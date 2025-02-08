@@ -1,1 +1,0 @@
-export const TRACE_SAMPLE_RATE_SENTRY = 0.2;

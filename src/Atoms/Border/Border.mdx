@@ -1,0 +1,80 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/blocks';
+import config from '../../../tailwind.config';
+
+export const BorderRadius = () => {
+  const colors = [
+    config.theme.colors.accent.radiant,
+    config.theme.colors.accent.rose,
+    config.theme.colors.accent.purple,
+    config.theme.colors.accent.pacific.blue,
+  ]
+
+  const objectSpacing =config.theme.borderRadius
+  const keysSpacing = Object.keys(objectSpacing)
+
+  return <div className="flex gap-xs">
+    {keysSpacing.map((key, index) => {
+      const value = objectSpacing[key]
+
+      return <div key={key} >
+      <div className='text-center text-content-fg-subcontent'>
+      {key}
+      </div>
+      <div
+        className="flex justify-center items-center"
+         style={{
+          color:    config.theme.colors.content.fg.contrast,
+          borderRadius: value, background: colors[index], width: '100px', height: '100px'}}>
+
+
+          {value}
+        </div>
+        </div>
+      })}
+  </div>
+}
+
+
+
+
+export const BorderWidth = () => {
+  const colors = [
+    config.theme.colors.accent.radiant,
+  ]
+
+  const objectSpacing =config.theme.borderWidth
+  const keysSpacing = Object.keys(objectSpacing)
+
+  return <div className="flex gap-xs">
+    {keysSpacing.map((key, index) => {
+      const value = objectSpacing[key]
+
+      return<div key={key} >
+            <div className='text-center text-content-fg-subcontent'>
+      {key}
+      </div>
+      <div
+        className="flex justify-center items-center"
+        style={{
+          borderColor:    colors[index],
+          borderWidth: value
+          }}
+          >
+
+          {value}
+        </div>
+        </div>
+      })}
+  </div>
+}
+
+
+## Border radius
+
+Border radius usado no projeto
+
+<BorderRadius />
+
+Bordas usadas no projeto
+
+<BorderWidth />

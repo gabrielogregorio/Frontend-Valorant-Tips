@@ -1,0 +1,48 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/blocks';
+import config from '../../../tailwind.config';
+
+export const Spacing = () => {
+
+const objectSpacing =config.theme.spacing
+const keysSpacing = Object.keys(objectSpacing)
+
+return <table className="table-fixed">
+<thead>
+    <tr>
+      <th>Name</th>
+      <th>Size</th>
+    </tr>
+  </thead>
+   <tbody>
+
+{keysSpacing.map((key) => {
+
+
+const value = objectSpacing[key]
+
+    return   <tr key={key}>
+      <td>{key}</td>
+      <td className="flex gap-xs">
+        <div style={{width: '50px'}}>
+          {value}
+        </div>
+
+        <span style={{paddingRight: value, background: '#9747FF'}}/>
+      </td>
+    </tr>
+  })}
+   </tbody>
+  </table>
+
+
+}
+
+
+## Layout scale
+
+The layout units arrange components and other UI parts into a full-page layout.
+
+<Spacing />
+
+
+

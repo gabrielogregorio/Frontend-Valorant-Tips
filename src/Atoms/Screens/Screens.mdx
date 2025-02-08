@@ -1,0 +1,45 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/blocks';
+import config from '../../../tailwind.config';
+
+export const Shadow = () => {
+  const colors = [
+    config.theme.colors.accent.radiant,
+    config.theme.colors.accent.rose,
+    config.theme.colors.accent.purple,
+    config.theme.colors.accent.pacific.blue,
+  ]
+
+  const objectSpacing =config.theme.screens
+  const keysSpacing = Object.keys(objectSpacing)
+
+  return <div className="flex flex-col gap-xs">
+    {keysSpacing.map((key, index) => {
+      const value = objectSpacing[key]
+
+      return <div key={key} >
+      <div className='text-center'>
+      {key}
+      </div>
+      <div
+        className="flex justify-center items-center text-content-fg-contrast"
+         style={{
+          width: value,
+          height: '100px',
+          backgroundColor: colors[index]
+          }}>
+        {`<=`} {value}
+        </div>
+        </div>
+      })}
+  </div>
+}
+
+
+
+
+## Border radius
+
+Border radius usado no projeto
+
+<Shadow />
+

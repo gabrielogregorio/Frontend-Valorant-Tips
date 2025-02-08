@@ -1,3 +1,12 @@
+TRAZER DE VOLTA
+
+commit lint
+sentry
+prettier
+jest
+coverage
+hotjar
+
 <div align="center">
 
 # Valorant tips
@@ -14,8 +23,9 @@
 
 <div align="center">
 
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/aa7397922b484be6943daaa86f16f919)](https://www.codacy.com/gh/gabrielogregorio/valorant-tips/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=gabrielogregorio/valorant-tips&amp;utm_campaign=Badge_Grade)
-[![Codacy Badge](https://app.codacy.com/project/badge/Coverage/aa7397922b484be6943daaa86f16f919)](https://www.codacy.com/gh/gabrielogregorio/valorant-tips/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=gabrielogregorio/valorant-tips&amp;utm_campaign=Badge_Coverage)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/aa7397922b484be6943daaa86f16f919)](https://www.codacy.com/gh/gabrielogregorio/valorant-tips/dashboard?utm_source=github.com&utm_medium=referral&utm_content=gabrielogregorio/valorant-tips&utm_campaign=Badge_Grade)
+[![Codacy Badge](https://app.codacy.com/project/badge/Coverage/aa7397922b484be6943daaa86f16f919)](https://www.codacy.com/gh/gabrielogregorio/valorant-tips/dashboard?utm_source=github.com&utm_medium=referral&utm_content=gabrielogregorio/valorant-tips&utm_campaign=Badge_Coverage)
+
 </div>
 
 <div align="center">
@@ -24,28 +34,30 @@
 ![issues closed](https://img.shields.io/github/issues-closed/gabrielogregorio/valorant-tips.svg)
 ![PR's open](https://img.shields.io/github/issues-pr/gabrielogregorio/valorant-tips.svg)
 ![PR's closed](https://img.shields.io/github/issues-pr-closed/gabrielogregorio/valorant-tips.svg)
-  
-  
+
 </div>
 
 <div align="center">
 
 <a href="https://valorant-tips.vercel.app/" target="blank">Access blog</a>
+
 </div>
 
 ## Introduction this project
+
 This project was developed using NextJs, Typescript and api is available at [vavatips-backend](https://github.com/gabrielogregorio/valorant-tips-api).
 
 Access [Valorant tips](https://valorant-tips.vercel.app/) or [storybook](https://gabrielogregorio.github.io/valorant-tips/)
 
 ![](/home.png)
+
 ## Badges
 
 ![GitHub stars](https://img.shields.io/github/stars/gabrielogregorio/vavatips-frontend)
 ![GitHub last commit](https://img.shields.io/github/last-commit/gabrielogregorio/vavatips-frontend?style=flat-square)
 ![GitHub contributors](https://img.shields.io/github/contributors/gabrielogregorio/vavatips-frontend)
 ![GitHub language count](https://img.shields.io/github/languages/count/gabrielogregorio/vavatips-frontend)
-![GitHub repo size](https://img.shields.io/github/repo-size/gabrielogregorio/vavatips-frontend) ![statements](./coverage/badge-statements.svg) ![branchs](./coverage/badge-branches.svg) ![functions](./coverage/badge-functions.svg) ![lines](./coverage/badge-lines.svg) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/aa7397922b484be6943daaa86f16f919)](https://www.codacy.com/gh/gabrielogregorio/valorant-tips/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=gabrielogregorio/valorant-tips&amp;utm_campaign=Badge_Grade)
+![GitHub repo size](https://img.shields.io/github/repo-size/gabrielogregorio/vavatips-frontend) ![statements](./coverage/badge-statements.svg) ![branchs](./coverage/badge-branches.svg) ![functions](./coverage/badge-functions.svg) ![lines](./coverage/badge-lines.svg) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/aa7397922b484be6943daaa86f16f919)](https://www.codacy.com/gh/gabrielogregorio/valorant-tips/dashboard?utm_source=github.com&utm_medium=referral&utm_content=gabrielogregorio/valorant-tips&utm_campaign=Badge_Grade)
 
 ## Run Project for development
 
@@ -59,6 +71,7 @@ Read [Contributing.md](CONTRIBUTING.md)
 ## Available scripts
 
 ### Run
+
 ```bash
 # Install full dependencies
 yarn
@@ -78,6 +91,7 @@ yarn run storybook
 ```
 
 ### Tests
+
 ```bash
 # Tests with react testing library and cypress(e2e)
 yarn test
@@ -116,15 +130,16 @@ npx depcheck
 # Uprade packages
 yarn upgrade-interactive --latest
 ```
+
 ## Vscode extensions for this project
 
-| Extension | Description | Author |
-|-----------|--------|---------|
-| Eslint  | For linting code | Microsoft |
-| Prettier - Code formatter | For beautifully formate code | Prettier |
-| Prettier Eslint  | Integration prettier and eslint | Rebecca Vest |
-| Stylelint  | For lint in styles | Stylelint|
-| Gitignore  | For use .gitignore | CodeZombie |
-| EditorConfig for VS code | For basics formatter in code |  EditorConfig |
-| Tailwind CSS IntelliSense | For highlight and autocomplete tailwind | Tailwind Labs |
-| TODO Highlight v2 | For highlight FIXME: and TODO: | Jonathan Clark |
+| Extension                 | Description                             | Author         |
+| ------------------------- | --------------------------------------- | -------------- |
+| Eslint                    | For linting code                        | Microsoft      |
+| Prettier - Code formatter | For beautifully formate code            | Prettier       |
+| Prettier Eslint           | Integration prettier and eslint         | Rebecca Vest   |
+| Stylelint                 | For lint in styles                      | Stylelint      |
+| Gitignore                 | For use .gitignore                      | CodeZombie     |
+| EditorConfig for VS code  | For basics formatter in code            | EditorConfig   |
+| Tailwind CSS IntelliSense | For highlight and autocomplete tailwind | Tailwind Labs  |
+| TODO Highlight v2         | For highlight FIXME: and TODO:          | Jonathan Clark |

@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Skeleton should render a default variant 1`] = `
+<div>
+  <div>
+    <div
+      class="bg-content-bg-disabled animate-pulseIn300 w-[220px] h-[184px]"
+    />
+  </div>
+</div>
+`;

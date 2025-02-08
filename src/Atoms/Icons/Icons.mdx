@@ -1,0 +1,22 @@
+import { Meta, IconGallery, IconItem } from '@storybook/blocks';
+import { Icons } from '.'
+
+<Meta title="Atoms/Iconography" />
+
+# Iconography
+
+<IconGallery>
+{Object.keys(Icons).map((iconKey) => {
+  const Tag = Icons[iconKey]
+
+   return   <IconItem name={iconKey}>
+    <Tag  />
+  </IconItem>
+})}
+</IconGallery>
+
+
+
+
+
+

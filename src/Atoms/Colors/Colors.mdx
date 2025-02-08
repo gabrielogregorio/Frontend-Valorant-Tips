@@ -1,0 +1,45 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/blocks';
+import config from '../../../tailwind.config';
+
+{/* <Meta title="Colors" /> */}
+
+export const ColorDs = () => {
+  const dsColors = config.theme.colors;
+  const colorMapped = {}
+
+  const remapColorsToStorybook = (object, keyHistory = []) => {
+    if (typeof object === 'string') {
+      if(colorMapped[keyHistory[0]]) {
+        colorMapped[keyHistory[0]] ={...colorMapped[keyHistory[0]], [keyHistory.join('-')]: object }
+        return
+      }
+
+      colorMapped[keyHistory[0]] =  {[keyHistory.join('-')]: object}
+      return
+    }
+
+    const keys = Object.keys(object)
+
+    keys.forEach((key) => {
+      remapColorsToStorybook(object[key], [...keyHistory, key])
+    })
+    return
+  }
+
+  remapColorsToStorybook(dsColors)
+
+  return <div>{Object.keys(colorMapped).map((key) => {
+
+return <ColorItem
+  title={key}
+  key={key}
+  subtitle={key}
+  colors={colorMapped[key]}
+/>
+
+})}</div>;
+};
+
+<ColorPalette>
+  <ColorDs />
+</ColorPalette>

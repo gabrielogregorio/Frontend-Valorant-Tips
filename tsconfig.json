@@ -1,39 +1,31 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
+    "target": "ES2017",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
-    "strict": false,
-    "forceConsistentCasingInFileNames": true,
+    "strict": true,
     "noEmit": true,
     "esModuleInterop": true,
+    "typeRoots": ["node_modules/@types", "node_modules/@testing-library"],
+    "types": ["node", "jest"],
+
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "baseUrl": ".",
-    "paths": {
-      "@/base/*": ["src/components/base/*"],
-      "@/layout/*": ["src/components/layout/*"],
-      "@/widgets/*": ["src/components/widgets/*"],
-      "@/contexts/*": ["src/core/contexts/*"],
-      "@/constants/*": ["src/core/constants/*"],
-      "@/data/*": ["src/core/data/*"],
-      "@/helpers/*": ["src/core/helpers/*"],
-      "@/hooks/*": ["src/core/hooks/*"],
-      "@/services/*": ["src/core/services/*"],
-      "@/handlers/*": ["src/core/handlers/*"],
-      "@/schemas/*": ["src/core/schemas/*"],
-      "@/mock/*": ["src/tests/mock/*"],
-      "@/utils/*": ["src/tests/utils/*"],
-      "@/pages/*": ["src/pages/*"],
-      "@/types/*": ["src/core/types/*"],
-      "@/enums/*": ["src/core/enums/*"]
-    },
-    "incremental": true
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
-  "include": ["next-env.d.ts", "./src/**/*.ts", "./src/**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "jest.setup.js", "./jest.setup.js"],
   "exclude": ["node_modules"]
 }
